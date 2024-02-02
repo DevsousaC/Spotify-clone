@@ -1,0 +1,60 @@
+/* CSS Reset */
+
+/* Box sizing border-box por padrão */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remover margens e preenchimentos padrão */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+blockquote,
+figure,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remover estilos padrão da lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remover decoração de texto padrão */
+a {
+  text-decoration: none;
+}
+
+/* Definir estilos básicos de página */
+body {
+  line-height: 1.6;
+}
+
+/* Elementos de formulário e botões consistentes em todos os navegadores */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* Remover quebra de texto indesejada em IE 11 */
+/* Consulte: https://stackoverflow.com/a/31774538 */
+body {
+    word-wrap: break-word;
+}
+/* Adicionar estilos específicos de fonte e tamanho para outros elementos, se necessário */

@@ -1,0 +1,251 @@
+body{
+    background-color: #000;
+    font-family: var(--font-family);
+}
+aside#sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    width: var(--widthaside);
+    height: calc();
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* background-color: rgb(9, 122, 122); */
+}
+nav#sidebar-navigation{
+    background-color: #121212;
+    width: 100%;
+    height: 156px;
+    border-radius: 8px;
+    padding: 16px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+nav#sidebar-navigation div#logo a img{
+    width: 80px;
+}
+aside#sidebar nav#sidebar-navigation ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+aside#sidebar nav#sidebar-navigation ul li a{
+    color: var(--color-off);
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+aside#sidebar nav#sidebar-navigation ul li a:hover{
+    color: var(--color-highlighted);
+}
+aside#sidebar nav#sidebar-navigation ul li a i{
+    font-size: 24px;
+}
+aside#sidebar div#libraly{
+    background-color: #121212;
+    width: 100%;
+    height: 411px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+div#libraly header{
+    padding: 16px 20px 20px 15px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-off);
+}
+div#libraly header div#libraly-ocult{
+    position: fixed ;
+    width: 130px;
+    left: 40px;
+    top: 150px;
+    display: none;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #2e2929;
+
+}
+div#libraly header div#playlist-create{
+    z-index: 6;
+    position: fixed ;
+    width: 150px;
+    left: 160px;
+    top: 150px;
+    display: none;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #2e2929;
+}
+div#libraly header button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    color: var(--color-off);
+}
+div#libraly header button i{
+    font-size: 30px;
+}
+div#libraly header button span{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+}
+div#libraly header button:hover{
+    color: var(--color-highlighted);
+}
+div#libraly header i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+}
+div#libraly header i:hover{
+    color: var(--color-highlighted);
+}
+div#libraly section#section-playlist{
+    background-color: #242424;
+    width: 94%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    padding: 20px 15px;
+    color:  var(--color-highlighted);
+}
+div#libraly section#section-playlist div#playlist__text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: "DM Sans", sans-serif;
+}
+
+section#section-playlist div#playlist__text span#playlist__title{
+    font-weight: 600;
+}
+div#libraly section#section-playlist button{
+    width: 113px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--color-highlighted);
+}
+div#libraly section#section-playlist button:hover{
+    transform: scale(1.04);
+}
+div#libraly section#section-cookies{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 0 10px 0;
+    padding: 0 24px;
+}
+div#libraly section#section-cookies div#section-cookies_content span a{
+    font-size: 10px;
+    color: var(--color-off);
+    text-decoration: none;
+    margin-right: 16px;
+}
+div#libraly section#section-cookies span a{
+    font-size: 12px;
+    color: var(--color-off);
+    text-decoration: none;
+}
+div#libraly section#section-cookies span a:hover{
+    text-decoration: underline;
+}
+div#libraly section#section-language{
+    width: 90%;
+    height: 50px;
+}
+div#libraly section#section-language button{
+    cursor: pointer;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid #878787;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 6px;
+    background-color: transparent;
+}
+div#libraly section#section-language button:hover{
+    border: 1px solid var(--color-highlighted);
+    transform: scale(1.04);
+}
+div#libraly section#section-language button i{
+    color: var(--color-highlighted);
+    font-size: 20px;
+}
+div#libraly section#section-language button span{
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-highlighted);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 16px);
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8px 8px 8px;
+    padding: 0px 16px 0px 16px;
+    background: linear-gradient(to right,#ae2896, #509bf5);
+}
+footer a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a div#section-footer__content__text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-highlighted);
+    font-size: 16px;
+}
+footer a div#section-footer__content__text span#section-footer_title{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer a button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 24px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--color-highlighted);
+}

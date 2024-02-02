@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/vars.css">
+    <link rel="stylesheet" href="./src/styles/main-header.css">
+    <link rel="stylesheet" href="./src/styles/aside-footer.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
+    <title>Spotify</title>
+</head>
+<body>
+    <aside id="sidebar">
+        <nav id="sidebar-navigation">
+            <div id="logo">
+                <a href="#">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo do Spotify">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-home-alt-2'></i>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-search'></i>
+                        <span>Buscar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="libraly">
+            <header>
+                <div id="libraly-ocult"><span>Ocultar biblioteca</span></div>
+                <button>
+                    <i class='bx bx-library'></i>
+                    <span id="your-libraly" onmouseenter="showLibraly()" onmouseout="hiddenLibraly()">Sua biblioteca</span>
+                </button>
+                <div id="playlist-create"><span>Criar playlist ou pasta</span></div>
+                <i class='bx bx-plus'  onmouseenter="showPlaylist()" onmouseout="hiddenPlaylist()" ></i>
+            </header>
+            <section id="section-playlist">
+                <div id="playlist__text">
+                    <span id="playlist__title">Crie sua primeira playlist</span>
+                    <span>É facil, vamos te ajudar.</span>
+                </div>
+                <button>Criar playlist</button>
+            </section>
+            <section id="section-cookies">
+               <div id="section-cookies_content">
+                    <span><a href="#">Legal</a></span>
+                    <span><a href="#">Centro de Privacidade</a></span>
+                    <span><a href="#">Politica de privacidade</a></span>
+                    <span><a href="#">Cookies</a></span>
+                    <span><a href="#">Sobre anúncios</a></span>
+                    <span><a href="#">Acessibilidade</a></span>
+                    <span><a href="#">Notice at Colletion</a></span>
+                    <span><a href="#">Definições de Cookies</a></span>
+                </div>
+                <span><a href="#">Cookie</a></span>
+            </section>
+            <section id="section-language">
+                <button>
+                    <i class='bx bx-globe' ></i>
+                    <span>Português do Brasil</span>
+                </button>
+            </section>
+        </div>
+    </aside>
+    <main id="main_content">
+        <header id="header-main">
+            <div id="header-nav">
+                <nav id="header__navigation">
+                    <i class='bx bx-chevron-left arrow'></i>
+                    <i class='bx bx-chevron-right arrow'></i>
+                </nav>
+                <div id="header__search" class="" onclick="border()" onmouseleave="border()">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" placeholder="O que você quer ouvir?" maxlength="800">
+                    <i class='bx bx-plus' id="cancel-button"></i>
+                </div>
+            </div>
+            <div></div>
+            
+            <div id="header__login">
+                <button id="subscribe">Inscrever-se</button>
+                <button id="login">entrar</button>
+            </div>
+        </header>
+        <!-- PLAYLIST -->
+        <!-- LIST ITEM 1 -->
+        <div id="offer__scroll-container">
+			<div id="playlist-container">
+				<div id="result-playlists">
+					<div id="playlist">
+						<h1 id="greeting"></h1>
+						<h2 id="session">Navegar por todas as seções</h2>
+					</div>
+				</div>
+			</div>
+            <div id="offer__list">
+                <section id="offer__list-item">
+                    <!-- CARD 1 -->
+                    <a href="#">
+                        <div class="cards card1">
+                            <img src="./src/assets/playlist/1.jpeg" alt="" />
+                            <span>Boas festas</span>
+                        </div>
+                    </a>
+                    <!-- CARD 2 -->
+                    <a href="#">
+                        <div class="cards card2">
+                            <img src="./src/assets/playlist/2.png" alt="" />
+                            <span>Feitos para você</span>
+                        </div>
+                    </a>
+                    <!-- CARD 3 -->
+                    <a href="#">
+                        <div class="cards card3">
+                            <img src="./src/assets/playlist/3.jpeg" alt="" />
+                            <span>Lançamentos</span>
+                        </div>
+                    </a>
+                    <!-- CARD 4 -->
+                    <a href="#" >
+                        <div class="cards card4">
+                            <img src="./src/assets/playlist/4.jpeg" alt="" />
+                            <span>Creators</span>
+                        </div>
+                    </a>
+                    <!-- CARD 5 -->
+                    <a href="#" >
+                        <div class="cards card5">
+                            <img src="./src/assets/playlist/5.jpeg" alt="" />
+                            <span>Para treinar</span>
+                        </div>
+                    </a>
+                    <!-- CARD 6 -->
+                    <a href="#" >
+                        <div class="cards card6">
+                            <img src="./src/assets/playlist/6.jpeg" alt="" />
+                            <span>Podcasts</span>
+                        </div>
+                    </a>
+                    <!-- CARD 7 -->
+                    <a href="#">
+                        <div class="cards card7">
+                            <img src="./src/assets/playlist/7.jpeg" alt="" />
+                            <span>Sertanejo</span>
+                        </div>
+                    </a>
+                    <!-- CARD 8 -->
+                    <a href="#">
+                        <div class="cards card8">
+                            <img src="./src/assets/playlist/8.jpeg" alt="" />
+                            <span>Samba e pagode</span>
+                        </div>
+                    </a>
+                    <!-- CARD 9 -->
+                    <a href="#">
+                        <div class="cards card9">
+                            <img src="./src/assets/playlist/9.jpeg" alt="" />
+                            <span>Funk</span>
+                        </div>
+                    </a>
+                    <!-- CARD 10 -->
+                    <a href="#">
+                        <div class="cards card10">
+                            <img src="./src/assets/playlist/10.jpeg" alt="" />
+                            <span>MPB</span>
+                        </div>
+                    </a>
+                    <!-- CARD 11 -->
+                    <a href="#">
+                        <div class="cards card11">
+                            <img src="./src/assets/playlist/11.jpeg" alt="" />
+                            <span>Rock</span>
+                        </div>
+                    </a>
+                    <!-- CARD 12 -->
+                    <a href="#">
+                        <div class="cards card12">
+                            <img src="./src/assets/playlist/12.jpeg" alt="" />
+                            <span>Hip Hop</span>
+                        </div>
+                    </a>
+                    <!-- CARD 13 -->
+                    <a href="#">
+                        <div class="cards card13">
+                            <img src="./src/assets/playlist/13.jpeg" alt="" />
+                            <span>Indie</span>
+                        </div>
+                    </a>
+                    <!-- CARD 14 -->
+                    <a href="#">
+                        <div class="cards card14">
+                            <img src="./src/assets/playlist/14.jpeg" alt="" />
+                            <span>Relax</span>
+                        </div>
+                    </a>
+                    <!-- CARD 15 -->
+                    <a href="#">
+                        <div class="cards card15">
+                            <img src="./src/assets/playlist/15.jpeg" alt="" />
+                            <span>Música Latina</span>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+            
+    </main>
+    <footer>
+        <a href="#" id="section-footer__content">
+            <div id="section-footer__content__text">
+                <span id="section-footer_title">Testar o Premium de graça</span>
+                <span>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de credito</span>
+            </div>
+            <button>Inscreva-se grátis</button>
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+:root{
+    /* WIDTH */
+    --widthaside: 24%;
+    --widthmain: calc(100% - var(--widthaside) - 8px);
+    --widthfooter: calc(var(--widthB) / 2);
+    --paddingmain: 0 10px;
+    /* COLOR */
+    --color-highlighted: #fff;
+    --color-off: #a7a7a7;
+    /* FONT FAMILY */
+    --font-family: "DM Sans", sans-serif;
+  }

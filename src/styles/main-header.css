@@ -1,0 +1,238 @@
+/* HEADER MAIN */
+
+main#main_content{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: var(--widthmain);
+    height: calc(80% - 16px);
+    margin: 10vh 8px 8px 0;
+    padding: var(--paddingmain);
+    background-color: #121212;
+}
+header#header-main{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--widthmain);
+    height: 10vh;
+    border-radius: 8px 8px 0 0;
+    padding: var(--paddingmain);
+    margin: 8px 8px 0px 0;
+    background-color: #0c0c0c;
+}
+#header-nav{
+    display: flex;
+}
+header#header-main nav#header__navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header#header-main nav#header__navigation i{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    color: #b3b3b3;
+    font-size: 32px;
+    background: #131313;;
+    background-color: rgba(0,0,0,7);
+}
+header#header-main nav#header__navigation i.bx-chevron-left{
+    margin-right: 1.25rem;
+} 
+header#header-main div#header__search{
+    width: 364px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+header#header-main div#header__search:hover{
+    border: 1px solid #4e4848;
+    background-color: #2f2d2d;
+}
+header#header-main div#header__search.search-activated{
+    border: 2px solid #fff;
+}
+header#header-main div#header__search img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+header#header-main div#header__search input#search-input{
+    width: 85%;
+    border: none;
+    padding: 10px 10px 10px 12px;
+    color: var(--color-highlighted);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    background-color: transparent;
+}
+header#header-main div#header__search i#cancel-button{
+    color: var(--color-highlighted);
+    display: none;
+}
+header#header-main div#header__login{
+    display: flex;
+    gap: 20px;
+}
+header#header-main div#header__login button#subscribe{
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var( --color-off);
+    background-color: transparent;
+}
+header#header-main div#header__login button#subscribe:hover{
+    color: var(--color-highlighted);
+}
+
+header#header-main div#header__login button#login{
+    cursor: pointer;
+    padding: 12px 32px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background-color: var(--color-highlighted);
+}
+header#header-main div#header__login button#login:hover{
+    transform: scale(1.04);
+}
+
+  /* SCROLL */
+#offer__scroll-container {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+  
+#offer__scroll-container::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+#offer__scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  /* FIM SCROLL */
+
+div#playlist-container{
+    width: 100%;
+    padding-top: 16px;
+    border-radius: 10px;
+  }
+  
+div#playlist {
+    margin: 0px 0 24px 0;
+  }
+  
+div#playlist h1#greeting {
+    color: var(--color-highlighted);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+div#playlist h2#session {
+    color: var(--color-highlighted);
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+#offer__list-item {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 0 auto;
+  }
+  
+.cards {
+    position: relative; 
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+.cards span {
+    padding: 16px;
+    position: absolute;
+    color: var(--color-highlighted);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  /* COLOR CARDS */
+.card1 {
+    background-color: rgb(0, 100, 80);
+  }
+.card2 {
+    background-color: rgb(132, 0, 231);
+  }
+.card3 {
+    background: rgb(30, 50, 100);
+  }
+.card4 {
+    background: rgb(140, 25, 50);
+  }
+.card5 {
+    background: rgb(232, 17, 91);
+  }
+.card6 {
+    background: rgb(83, 122, 161);
+  }
+.card7 {
+    background: rgb(142, 102, 172);
+  }
+.card8 {
+    background: rgb(20, 138, 8);
+  }
+.card9 {
+    background: rgb(30, 50, 100);
+  }
+.card10 {
+    background: rgb(233, 20, 41);
+  }
+.card11 {
+    background: rgb(80, 55, 80);
+  }
+.card12 {
+    background: rgb(216, 64, 0);
+  }
+.card13 {
+    background: rgb(186, 93, 7);
+  }
+.card14 {
+    background: rgb(0, 30, 80);
+  }
+.card15 {
+    background: rgb(60, 30, 80);
+  }
+
+/* FIM COLOR CARDS */
+#offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+  }
+  
